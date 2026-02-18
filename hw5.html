@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="coords" style="font-size: 32px; padding: 20px;">X: 0, Y: 0</div>
+
+    <script>
+        const coords = document.getElementById('coords');
+        
+        document.onmousemove = function(e) {
+            coords.innerHTML = 'X: ' + e.clientX + ', Y: ' + e.clientY;
+        };
+    </script>
+</body>
+</html>
